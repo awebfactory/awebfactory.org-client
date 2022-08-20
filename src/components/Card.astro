@@ -21,7 +21,7 @@ const { href, title, body } = Astro.props as Props;
 </li>
 <style>
 	:root {
-		--link-gradient: linear-gradient(45deg, #4f39fa, #da62c4 30%, var(--color-border) 60%);
+		--link-gradient: linear-gradient(45deg, #99cc66, #669933, 30%, var(--color-border) 60%);
 	}
 
 	.link-card {
@@ -61,12 +61,16 @@ const { href, title, body } = Astro.props as Props;
 		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
+	.link-card p {
+		color: #434547;
+	}
+
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
 	}
 
 	.link-card:is(:hover, :focus-within) h2 {
-		color: #4f39fa;
+		color: #996633;
 	}
 
 	.link-card:is(:hover, :focus-within) h2 span {
