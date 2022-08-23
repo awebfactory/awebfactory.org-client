@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import '../styles/global.css';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1 class="text-awfdarkbrown-500 font-medium">AWebFactory <span class="text-gradient">Project Flow and Tracker</span></h1>
-		<h2 class="text-lime-600">web application factory pattern</h2>
-		<h3 class="mb-4 text-lime-700">workspaces for web application process</h3>
+		<h1 class="text-potters-clay-500">AWebFactory <span class="text-texas-rose-400">Project Flow and Tracker</span></h1>
+		<h2 class="text-limeade-600">web application factory pattern</h2>
+		<h3 class="mb-4 text-limeade-700">workspaces for web application process</h3>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://awebfactory.com/projects"
@@ -32,63 +33,3 @@ import Card from '../components/Card.astro';
 		</ul>
 	</main>
 </Layout>
-
-<style>
-	:root {
-		--astro-gradient: linear-gradient(0deg, #996633, #ff9900);
-	}
-
-	h1 {
-		margin: 2rem 0;
-	}
-
-	main {
-		margin: auto;
-		padding: 1em;
-		max-width: 60ch;
-	}
-
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
-
-	@keyframes pulse {
-		0%,
-		100% {
-			background-position-y: 0%;
-		}
-		50% {
-			background-position-y: 80%;
-		}
-	}
-
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		background: #4f39fa;
-		padding: 1rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
-	}
-
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
