@@ -10,6 +10,10 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        header: "Crete Round, Geneva, Arial, Helvetica, sans-serif",
+        "sub-header": "PT Sans, Verdana, Arial, Helvetica, sans-serif",
+      },
       colors: {
         "potters-clay": {
           50: "#f9f6ed",
