@@ -19,15 +19,12 @@
     @apply font-content font-normal text-base leading-snug text-slate-500;
   }
   .link-card-grid {
-    @apply grid gap-4 p-0;
+    @apply grid gap-4 mt-4 pt-2;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
   }
 }
 
 @layer components {
-  .link-card-grid {
-    @apply mt-4 pt-2;
-  }
   .link-card {
     @apply flex p-[0.15rem];
   }
