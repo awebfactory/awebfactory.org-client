@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         header: "Crete Round, Geneva, Arial, Helvetica, sans-serif",
         "sub-header": "PT Sans, Verdana, Arial, Helvetica, sans-serif",
+        content: "PT Sans, Verdana, Arial, Helvetica, sans-serif",
       },
       colors: {
         "potters-clay": {
