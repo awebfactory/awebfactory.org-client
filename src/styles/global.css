@@ -36,13 +36,13 @@
 @layer base {
   @font-face {
     font-family: "Crete Round";
-    src: url("fonts/creteround/CreteRound-Regular.ttf") format("truetype");
+    src: url("/fonts/creteround/CreteRound-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: "PT Sans";
-    src: url("fonts/ptsans/PT_Sans-Web-Regular.ttf") format("truetype");
+    src: url("/fonts/ptsans/PT_Sans-Web-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
