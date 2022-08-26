@@ -7,3 +7,4 @@ export const SITE_SLOGAN1 = "web application factory pattern"
 export const SITE_SLOGAN2 = "workspaces for web application process"
 export const SITE_DESCRIPTION =
   "A #BuildInPublic #LearnInPublic project-based experience where each purposeful step reports value and is re-usable where needed"
+export const COMPANY_WORKER_OWNER = "Victor Kane"
