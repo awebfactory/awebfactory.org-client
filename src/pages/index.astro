@@ -1,14 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
 import Card from '../components/Card.astro';
-import '../styles/global.css';
+import { SITE_COMPANY, SITE_DESCRIPTION, SITE_NAME, SITE_SLOGAN1, SITE_SLOGAN2 } from '../config'
 ---
 
-<Layout title="Welcome to Astro.">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<BaseHead company={SITE_COMPANY} name={SITE_NAME} description={SITE_DESCRIPTION} />
+</head>
+<body>
+	<Header />
 	<main>
-		<h1>AWebFactory <span class="text-texas-rose-500">Project Flow and Tracker</span></h1>
-		<h2 class="font-sub-header text-wild-willow-400">web application factory pattern</h2>
-		<h3>workspaces for web application process</h3>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://awebfactory.com/projects"
@@ -32,4 +37,5 @@ import '../styles/global.css';
 			/>
 		</ul>
 	</main>
-</Layout>
+</body>
+</html>
